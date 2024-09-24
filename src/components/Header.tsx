@@ -46,7 +46,7 @@ const Header = () => {
         <div className="container flex w-full max-w-[1530px] items-center justify-between md:w-[95%]">
           <div>
             <Image
-              src="/images/mason-boost-logo.svg"
+              src="/images/Mason-Boost-Logo.svg"
               alt="Mason Boost Logo"
               width={204}
               height={30}
