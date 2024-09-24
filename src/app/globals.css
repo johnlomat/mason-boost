@@ -25,3 +25,22 @@ body {
     text-wrap: balance;
   }
 }
+
+.heading-1 {
+  @apply text-[35px] font-semibold leading-tight lg:text-[55px] xl:text-[70px];
+}
+.heading-2 {
+  @apply text-[27px] font-semibold leading-tight lg:text-[39px] xl:text-[45px];
+}
+.heading-3 {
+  @apply text-[23px] font-semibold leading-tight lg:text-[29px] xl:text-[37px];
+}
+.heading-4 {
+  @apply text-[17px] font-semibold leading-tight lg:text-[21px] xl:text-[30px];
+}
+.sub-text {
+  @apply text-[15px];
+}
+.sub-heading {
+  @apply font-semibold uppercase leading-tight;
+}

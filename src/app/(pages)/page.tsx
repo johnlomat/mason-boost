@@ -1,101 +1,81 @@
-import Image from 'next/image'
+import React from 'react'
+import { Button } from '@/components/ui/Button'
+import Link from 'next/link'
+import HoverCard from '@/components/ui/HoverCard'
 
 export default function Home() {
   return (
-    <div className="grid min-h-screen grid-rows-[20px_1fr_20px] items-center justify-items-center gap-16 p-8 pb-20 font-[family-name:var(--font-geist-sans)] sm:p-20">
-      <main className="row-start-2 flex flex-col items-center gap-8 sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-center font-[family-name:var(--font-geist-mono)] text-sm sm:text-left">
-          <li className="mb-2">
-            Get started by editing{' '}
-            <code className="rounded bg-black/[.05] px-1 py-0.5 font-semibold dark:bg-white/[.06]">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex flex-col items-center gap-4 sm:flex-row">
-          <a
-            className="flex h-10 items-center justify-center gap-2 rounded-full border border-solid border-transparent bg-foreground px-4 text-sm text-background transition-colors hover:bg-[#383838] sm:h-12 sm:px-5 sm:text-base dark:hover:bg-[#ccc]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="flex h-10 items-center justify-center rounded-full border border-solid border-black/[.08] px-4 text-sm transition-colors hover:border-transparent hover:bg-[#f2f2f2] sm:h-12 sm:min-w-44 sm:px-5 sm:text-base dark:border-white/[.145] dark:hover:bg-[#1a1a1a]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <React.Fragment>
+      <section className="flex h-auto min-h-[480px] w-full items-center justify-center bg-[url('/images/section-background-1.jpg')] bg-cover bg-center bg-no-repeat md:min-h-[530px] xl:h-[calc(100vh-94px)] xl:min-h-[700px]">
+        <div className="container">
+          <div className="mx-auto max-w-[720px] xl:max-w-[960px]">
+            <div className="heading-1 mb-7 text-center text-white">
+              <h1>Transform Your Online Presence with a Stunning, Modern Website</h1>
+            </div>
+            <div className="mx-auto mb-6 max-w-[800px] text-center text-white">
+              <p>
+                At Mason Boost, we specialize in creating fast, responsive, and visually stunning
+                websites designed to grow your business.
+              </p>
+            </div>
+            <div className="text-center">
+              <Button asChild className="max-[360px]:text-[14px]">
+                <Link href="#">Get Your Free Consultation Today</Link>
+              </Button>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex flex-wrap items-center justify-center gap-6">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      <section className="bg-[#F7F8FC] py-16">
+        <div className="container md:w-[95%]">
+          <div className="mx-auto grid max-w-[1080px] grid-cols-1 gap-6 text-center md:grid-cols-2 md:gap-[5%] md:text-left">
+            <div className="heading-2">
+              <h2>
+                <span className="text-[#353535]">About </span>
+                <span className="bg-gradient-text-primary block bg-clip-text text-transparent">
+                  Mason Boost LTD
+                </span>
+              </h2>
+            </div>
+            <div className="space-y-4">
+              <div className="heading-4 text-secondary">
+                <h3>Who We Are</h3>
+              </div>
+              <div className="text-[#939598]">
+                <p>
+                  We&rsquo;re a web design agency dedicated to building beautiful, user-optimized
+                  websites that help businesses thrive online. Whether you&apos;re a small business
+                  or an established brand, we&rsquo;ll create a website that reflects your vision
+                  and drives results.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="pt-16">
+        <div className="container pb-16 md:w-[95%]">
+          <div className="mx-auto max-w-[620px] space-y-4 text-center">
+            <span className="text-secondary sub-heading">why choose us</span>
+            <div className="heading-2 text-[#353535]">
+              <h2>Why Choose Mason Boost for Your Website?</h2>
+            </div>
+          </div>
+        </div>
+        <div className="w-full">
+          <div className="grid grid-cols-4">
+            <HoverCard src="/images/Modern-Clean-Designs-image.jpg" alt="Modern, Clean, Designs" />
+            <HoverCard src="/images/Mobile-Friendly-image.jpeg" alt="Mobile-Friendly" />
+            <HoverCard src="/images/SEO-Optimized-image.jpg" alt="SEO Optimized" />
+            <HoverCard
+              src="/images/Tailored-to-Your-Business-image.jpg"
+              alt="Tailored to Your Business"
+            />
+          </div>
+        </div>
+      </section>
+    </React.Fragment>
   )
 }
