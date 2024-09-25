@@ -10,6 +10,10 @@ const config: Config = {
     container: {
       center: true,
       padding: '1.5rem',
+      screens: {
+        md: '880px',
+        xl: '1200px',
+      },
     },
     extend: {
       fontFamily: {

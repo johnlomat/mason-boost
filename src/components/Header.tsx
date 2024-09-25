@@ -42,7 +42,7 @@ const Header = () => {
 
   return (
     <React.Fragment>
-      <header className="w-full py-8">
+      <header className="w-full bg-white py-8">
         <div className="container flex w-full max-w-[1530px] items-center justify-between md:w-[95%]">
           <div>
             <Image

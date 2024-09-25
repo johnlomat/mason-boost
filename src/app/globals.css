@@ -38,9 +38,15 @@ body {
 .heading-4 {
   @apply text-[17px] font-semibold leading-tight lg:text-[21px] xl:text-[30px];
 }
+.heading-5 {
+  @apply text-[17px] font-semibold leading-tight lg:text-[21px] xl:text-[25px];
+}
 .sub-text {
   @apply text-[15px];
 }
 .sub-heading {
   @apply font-semibold uppercase leading-tight;
+}
+.body-text {
+  @apply text-[#939598];
 }
