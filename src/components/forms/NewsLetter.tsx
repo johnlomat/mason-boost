@@ -7,7 +7,7 @@ const NewsLetterForm = () => {
       <Input
         type="email"
         placeholder="Email address"
-        className="rounded-none border-0 border-b-[1px] font-normal text-white placeholder:font-normal placeholder:text-white focus-visible:ring-0"
+        className="rounded-none border-0 border-b-[1px] border-white font-normal text-white placeholder:font-normal placeholder:text-white focus-visible:ring-0 dark:border-white dark:text-white dark:placeholder:text-white"
       />
       <Button type="submit">Subscribe Now</Button>
     </div>

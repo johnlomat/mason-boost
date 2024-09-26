@@ -19,7 +19,7 @@ const IconBox = ({ heading, iconSrc, iconWidth, iconHeight }: IconBoxProp) => {
           height={iconHeight}
           className="mx-auto"
         />
-        <div className="heading-5">
+        <div className="heading-5 text-[#353535]">
           <h3>{heading}</h3>
         </div>
       </div>
