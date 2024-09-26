@@ -271,6 +271,57 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="bg-[#939598] bg-[url('/images/section-background-2.jpg')] bg-cover bg-center bg-no-repeat py-16">
+        <div className="container md:w-[95%]">
+          <div className="space-y-10">
+            <div className="mx-auto max-w-[700px]">
+              <HeadingBlock
+                subheading="what we offer"
+                heading="Our New Web Design Offer"
+                className="xl:text-center"
+                subheadingColor="white"
+                headingColor="white"
+              >
+                <div className="text-center text-white">
+                  <p>
+                    Looking for a modern, responsive website? We are offering a limited number of
+                    <strong>free web designs</strong> for businesses looking to transform their
+                    online presence. In exchange for a Trustpilot review, we’ll design and develop a
+                    fully customized website that helps you achieve your business goals.
+                  </p>
+                </div>
+              </HeadingBlock>
+            </div>
+            <div className="text-center">
+              <Button asChild className="max-[360px]:text-[14px]">
+                <Link href="#">Claim Your Free Website Design</Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-16">
+        <div className="container md:w-[95%]">
+          <div className="space-y-10">
+            <div className="mx-auto max-w-[700px]">
+              <HeadingBlock
+                subheading="testimonials"
+                heading="What Our Clients Say"
+                className="xl:text-center"
+              >
+                <div className="text-center">
+                  <p>
+                    We’re committed to delivering outstanding results for our clients. Here’s what
+                    they have to say about their experience with Mason Boost.”
+                  </p>
+                </div>
+              </HeadingBlock>
+            </div>
+          </div>
+        </div>
+      </section>
     </React.Fragment>
   )
 }
