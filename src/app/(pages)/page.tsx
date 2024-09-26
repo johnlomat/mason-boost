@@ -6,6 +6,8 @@ import HoverCard from '@/components/ui/HoverCard'
 import ItemList from '@/components/ui/ItemList'
 import HeadingBlock from '@/components/ui/HeadingBlock'
 import IconBox from '@/components/ui/IconBox'
+import { Card, CardContent } from '@/components/ui/Card'
+import TestimonialAuthor from '@/components/ui/TestimonialAuthor'
 
 export default function Home() {
   return (
@@ -16,7 +18,7 @@ export default function Home() {
             <div className="heading-1 mb-7 text-center text-white">
               <h1>Transform Your Online Presence with a Stunning, Modern Website</h1>
             </div>
-            <div className="mx-auto mb-6 max-w-[800px] text-center text-white">
+            <div className="mx-auto mb-8 max-w-[800px] text-center text-white">
               <p>
                 At Mason Boost, we specialize in creating fast, responsive, and visually stunning
                 websites designed to grow your business.
@@ -167,40 +169,40 @@ export default function Home() {
                 <ItemList
                   heading="Custom Design"
                   description="We’ll build a website that’s unique to your business and brand."
-                  useIcon={true}
-                  iconSrc="/images/code-icon.svg"
-                  iconWidth={42}
-                  iconHeight={38}
+                  useImage={true}
+                  imageSrc="/images/code-icon.svg"
+                  imageWidth={42}
+                  imageHeight={38}
                 />
               </div>
               <div className="col-span-12 md:col-span-6 lg:col-span-3 xl:col-span-6">
                 <ItemList
                   heading="Responsive Layout"
                   description="Your site will look great on any device, from mobile to desktop."
-                  useIcon={true}
-                  iconSrc="/images/responsive-icon.svg"
-                  iconWidth={38}
-                  iconHeight={38}
+                  useImage={true}
+                  imageSrc="/images/responsive-icon.svg"
+                  imageWidth={38}
+                  imageHeight={38}
                 />
               </div>
               <div className="col-span-12 md:col-span-6 lg:col-span-3 xl:col-span-6">
                 <ItemList
                   heading="SEO-Friendly Structure"
                   description="We’ll build a website that’s unique to your business and brand."
-                  useIcon={true}
-                  iconSrc="/images/globe-icon.svg"
-                  iconWidth={42}
-                  iconHeight={42}
+                  useImage={true}
+                  imageSrc="/images/globe-icon.svg"
+                  imageWidth={42}
+                  imageHeight={42}
                 />
               </div>
               <div className="col-span-12 md:col-span-6 lg:col-span-3 xl:col-span-6">
                 <ItemList
                   heading="Fast & Secure"
                   description="Your site will look great on any device, from mobile to desktop."
-                  useIcon={true}
-                  iconSrc="/images/rocket-icon.svg"
-                  iconWidth={41}
-                  iconHeight={41}
+                  useImage={true}
+                  imageSrc="/images/rocket-icon.svg"
+                  imageWidth={41}
+                  imageHeight={41}
                 />
               </div>
             </div>
@@ -285,7 +287,7 @@ export default function Home() {
               >
                 <div className="text-center text-white">
                   <p>
-                    Looking for a modern, responsive website? We are offering a limited number of
+                    Looking for a modern, responsive website? We are offering a limited number of{' '}
                     <strong>free web designs</strong> for businesses looking to transform their
                     online presence. In exchange for a Trustpilot review, we’ll design and develop a
                     fully customized website that helps you achieve your business goals.
@@ -304,7 +306,7 @@ export default function Home() {
 
       <section className="bg-white py-16">
         <div className="container md:w-[95%]">
-          <div className="space-y-10">
+          <div className="space-y-16">
             <div className="mx-auto max-w-[700px]">
               <HeadingBlock
                 subheading="testimonials"
@@ -318,6 +320,62 @@ export default function Home() {
                   </p>
                 </div>
               </HeadingBlock>
+            </div>
+            <div className="grid grid-cols-12 gap-9">
+              <Card className="col-span-4">
+                <CardContent className="flex h-full flex-col justify-between space-y-6">
+                  <div className="body-text pt-6">
+                    <p>
+                      Mason Boost took our digital marketing to the next level. Their expertise in
+                      SEO optimization significantly increased our website traffic and engagement.
+                      We saw measurable improvements in our search rankings and social media
+                      presence within weeks. Highly recommended!
+                    </p>
+                  </div>
+                  <TestimonialAuthor
+                    profilePic="/images/karen-D-profile-pic.png"
+                    name="karen D."
+                    position="Marketing manager"
+                    className="pb-6"
+                  />
+                </CardContent>
+              </Card>
+              <Card className="col-span-4">
+                <CardContent className="flex h-full flex-col justify-between space-y-6">
+                  <div className="body-text pt-6">
+                    <p>
+                      The team at Mason Boost is exceptional. Their tailored approach to search
+                      engine optimization delivered fantastic results for our brand. We’re now
+                      enjoying a stronger online presence and higher conversion rates thanks to
+                      their strategic insights and professional execution.
+                    </p>
+                  </div>
+                  <TestimonialAuthor
+                    profilePic="/images/Sarah-L-profile-pic.png"
+                    name="Sarah L."
+                    position="business owner"
+                    className="pb-6"
+                  />
+                </CardContent>
+              </Card>
+              <Card className="col-span-4">
+                <CardContent className="flex h-full flex-col justify-between space-y-6">
+                  <div className="body-text pt-6">
+                    <p>
+                      Working with Mason Boost has been a game-changer for our digital marketing
+                      efforts. Their deep knowledge of SEO strategies helped us achieve remarkable
+                      growth and visibility. Their support and innovative solutions have made a real
+                      difference for our business.
+                    </p>
+                  </div>
+                  <TestimonialAuthor
+                    profilePic="/images/michael-t-profile-pic.png"
+                    name="michael t."
+                    position="ceo"
+                    className="pb-6"
+                  />
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>

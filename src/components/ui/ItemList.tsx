@@ -8,34 +8,34 @@ type BaseProps = {
   className?: string
 }
 
-type WithIcon = BaseProps & {
-  useIcon: true
-  iconSrc: string
+type WithImage = BaseProps & {
+  useImage: true
+  imageSrc: string
   bullet?: never
   bulletNoBackground?: never
-  iconWidth: number
-  iconHeight: number
+  imageWidth: number
+  imageHeight: number
 }
-type WithoutIcon = BaseProps & {
-  useIcon?: false
-  iconSrc?: never
+type WithoutImage = BaseProps & {
+  useImage?: false
+  imageSrc?: never
   bullet: string
   bulletNoBackground?: boolean
-  iconWidth?: never
-  iconHeight?: never
+  imageWidth?: never
+  imageHeight?: never
 }
 
-type ItemListProp = WithIcon | WithoutIcon
+type ItemListProp = WithImage | WithoutImage
 
 const ItemList = ({
   bullet,
   heading,
   description,
   bulletNoBackground = false,
-  useIcon,
-  iconSrc,
-  iconWidth,
-  iconHeight,
+  useImage,
+  imageSrc,
+  imageWidth,
+  imageHeight,
   className,
 }: ItemListProp) => {
   return (
@@ -46,8 +46,8 @@ const ItemList = ({
           className,
         )}
       >
-        {useIcon ? (
-          <Image src={iconSrc} alt={heading} width={iconWidth} height={iconHeight} />
+        {useImage ? (
+          <Image src={imageSrc} alt={heading} width={imageWidth} height={imageHeight} />
         ) : (
           <div
             className={cn(
@@ -58,7 +58,7 @@ const ItemList = ({
             {bullet}
           </div>
         )}
-        <div className="w-auto space-y-4">
+        <div className="space-y-4">
           <div className="heading-5 text-[#353535]">
             <h3>{heading}</h3>
           </div>

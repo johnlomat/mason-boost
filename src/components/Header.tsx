@@ -43,7 +43,7 @@ const Header = () => {
   return (
     <React.Fragment>
       <header className="w-full bg-white py-8">
-        <div className="container flex w-full max-w-[1530px] items-center justify-between md:w-[95%]">
+        <div className="container flex w-full items-center justify-between md:w-[95%] xl:max-w-[1400px]">
           <div>
             <Image
               src="/images/Mason-Boost-Logo.svg"
