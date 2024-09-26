@@ -24,10 +24,10 @@ const Footer = () => {
                 </p>
               </div>
               <div className="flex justify-center space-x-8 md:justify-start">
-                <Link href="#">
+                <Link href="https://www.facebook.com/profile.php?id=61561506080680" target="_blank">
                   <Image src="/images/fb-icon-white.svg" alt="Facebook" width={25} height={25} />
                 </Link>
-                <Link href="#">
+                <Link href="https://www.linkedin.com/company/mason-boost-ltd" target="_blank">
                   <Image
                     src="/images/linkedin-icon-white.svg"
                     alt="LinkedIn"
@@ -35,7 +35,7 @@ const Footer = () => {
                     height={25}
                   />
                 </Link>
-                <Link href="#">
+                <Link href="https://www.instagram.com/masonboost/" target="_blank">
                   <Image
                     src="/images/instagram-icon-white.svg"
                     alt="Instagram"
