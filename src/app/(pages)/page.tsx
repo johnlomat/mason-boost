@@ -8,6 +8,13 @@ import HeadingBlock from '@/components/ui/HeadingBlock'
 import IconBox from '@/components/ui/IconBox'
 import { Card, CardContent } from '@/components/ui/Card'
 import TestimonialAuthor from '@/components/ui/TestimonialAuthor'
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/Carousel'
 
 export default function Home() {
   return (
@@ -304,79 +311,148 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-white py-16">
+      <section className="space-y-12 bg-white py-16">
+        <div className="container md:w-[95%]">
+          <div className="mx-auto max-w-[700px]">
+            <HeadingBlock
+              subheading="testimonials"
+              heading="What Our Clients Say"
+              className="xl:text-center"
+            >
+              <div className="text-center">
+                <p>
+                  We’re committed to delivering outstanding results for our clients. Here’s what
+                  they have to say about their experience with Mason Boost.”
+                </p>
+              </div>
+            </HeadingBlock>
+          </div>
+        </div>
+        <div className="container mx-auto xl:max-w-[1300px]">
+          <Carousel className="-my-6">
+            <CarouselContent className="md:p-6">
+              <CarouselItem className="md:basis-1/2 xl:basis-1/3">
+                <Card className="h-full">
+                  <CardContent className="flex h-full flex-col justify-between space-y-6">
+                    <div className="body-text pt-6">
+                      <p>
+                        Mason Boost took our digital marketing to the next level. Their expertise in
+                        SEO optimization significantly increased our website traffic and engagement.
+                        We saw measurable improvements in our search rankings and social media
+                        presence within weeks. Highly recommended!
+                      </p>
+                    </div>
+                    <TestimonialAuthor
+                      profilePic="/images/karen-D-profile-pic.png"
+                      name="karen D."
+                      position="Marketing manager"
+                      className="pb-6"
+                    />
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+              <CarouselItem className="md:basis-1/2 xl:basis-1/3">
+                <Card className="h-full">
+                  <CardContent className="flex h-full flex-col justify-between space-y-6">
+                    <div className="body-text pt-6">
+                      <p>
+                        The team at Mason Boost is exceptional. Their tailored approach to search
+                        engine optimization delivered fantastic results for our brand. We’re now
+                        enjoying a stronger online presence and higher conversion rates thanks to
+                        their strategic insights and professional execution.
+                      </p>
+                    </div>
+                    <TestimonialAuthor
+                      profilePic="/images/Sarah-L-profile-pic.png"
+                      name="Sarah L."
+                      position="business owner"
+                      className="pb-6"
+                    />
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+              <CarouselItem className="md:basis-1/2 xl:basis-1/3">
+                <Card className="h-full">
+                  <CardContent className="flex h-full flex-col justify-between space-y-6">
+                    <div className="body-text pt-6">
+                      <p>
+                        Working with Mason Boost has been a game-changer for our digital marketing
+                        efforts. Their deep knowledge of SEO strategies helped us achieve remarkable
+                        growth and visibility. Their support and innovative solutions have made a
+                        real difference for our business.
+                      </p>
+                    </div>
+                    <TestimonialAuthor
+                      profilePic="/images/michael-t-profile-pic.png"
+                      name="michael t."
+                      position="ceo"
+                      className="pb-6"
+                    />
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+            </CarouselContent>
+          </Carousel>
+        </div>
+      </section>
+
+      <section className="overflow-hidden bg-[#F7F8FC] py-16">
         <div className="container md:w-[95%]">
           <div className="space-y-16">
-            <div className="mx-auto max-w-[700px]">
-              <HeadingBlock
-                subheading="testimonials"
-                heading="What Our Clients Say"
-                className="xl:text-center"
-              >
-                <div className="text-center">
-                  <p>
-                    We’re committed to delivering outstanding results for our clients. Here’s what
-                    they have to say about their experience with Mason Boost.”
-                  </p>
-                </div>
-              </HeadingBlock>
-            </div>
-            <div className="grid grid-cols-12 gap-9">
-              <Card className="col-span-4">
-                <CardContent className="flex h-full flex-col justify-between space-y-6">
-                  <div className="body-text pt-6">
-                    <p>
-                      Mason Boost took our digital marketing to the next level. Their expertise in
-                      SEO optimization significantly increased our website traffic and engagement.
-                      We saw measurable improvements in our search rankings and social media
-                      presence within weeks. Highly recommended!
-                    </p>
+            <HeadingBlock subheading="our portfolio" heading="Our Recent Works" />
+            <Carousel>
+              <CarouselContent className="-mt-6 mb-5" overflowVisible={true}>
+                <CarouselItem className="pl-6 md:basis-1/2 xl:basis-[40%]">
+                  <div className="relative overflow-hidden rounded-xl">
+                    <Image
+                      src="/images/sample-work-1-image.png"
+                      alt="Sample Work 1"
+                      width={430}
+                      height={420}
+                      className="w-full"
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full bg-[#000000AB]"></div>
+                    <div className="heading-4 absolute bottom-14 left-16 z-20 text-white">
+                      <h3>Sample 1</h3>
+                    </div>
                   </div>
-                  <TestimonialAuthor
-                    profilePic="/images/karen-D-profile-pic.png"
-                    name="karen D."
-                    position="Marketing manager"
-                    className="pb-6"
-                  />
-                </CardContent>
-              </Card>
-              <Card className="col-span-4">
-                <CardContent className="flex h-full flex-col justify-between space-y-6">
-                  <div className="body-text pt-6">
-                    <p>
-                      The team at Mason Boost is exceptional. Their tailored approach to search
-                      engine optimization delivered fantastic results for our brand. We’re now
-                      enjoying a stronger online presence and higher conversion rates thanks to
-                      their strategic insights and professional execution.
-                    </p>
+                </CarouselItem>
+                <CarouselItem className="pl-6 md:basis-1/2 xl:basis-[40%]">
+                  <div className="relative overflow-hidden rounded-xl">
+                    <Image
+                      src="/images/sample-work-2-image.png"
+                      alt="Sample Work 2"
+                      width={430}
+                      height={420}
+                      className="w-full"
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full bg-[#000000AB]"></div>
+                    <div className="heading-4 absolute bottom-14 left-16 z-20 text-white">
+                      <h3>Sample 2</h3>
+                    </div>
                   </div>
-                  <TestimonialAuthor
-                    profilePic="/images/Sarah-L-profile-pic.png"
-                    name="Sarah L."
-                    position="business owner"
-                    className="pb-6"
-                  />
-                </CardContent>
-              </Card>
-              <Card className="col-span-4">
-                <CardContent className="flex h-full flex-col justify-between space-y-6">
-                  <div className="body-text pt-6">
-                    <p>
-                      Working with Mason Boost has been a game-changer for our digital marketing
-                      efforts. Their deep knowledge of SEO strategies helped us achieve remarkable
-                      growth and visibility. Their support and innovative solutions have made a real
-                      difference for our business.
-                    </p>
+                </CarouselItem>
+                <CarouselItem className="pl-6 md:basis-1/2 xl:basis-[40%]">
+                  <div className="relative overflow-hidden rounded-xl">
+                    <Image
+                      src="/images/sample-work-3-image.png"
+                      alt="Sample Work 3"
+                      width={430}
+                      height={420}
+                      className="w-full"
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full bg-[#000000AB]"></div>
+                    <div className="heading-4 absolute bottom-14 left-16 z-20 text-white">
+                      <h3>Sample 3</h3>
+                    </div>
                   </div>
-                  <TestimonialAuthor
-                    profilePic="/images/michael-t-profile-pic.png"
-                    name="michael t."
-                    position="ceo"
-                    className="pb-6"
-                  />
-                </CardContent>
-              </Card>
-            </div>
+                </CarouselItem>
+              </CarouselContent>
+              <div className="flex justify-center md:justify-start">
+                <CarouselPrevious className="relative left-0 top-8 mr-6 h-[45px] w-[45px] border-primary bg-transparent text-primary hover:bg-primary hover:text-white 2xl:h-[60px] 2xl:w-[60px]" />
+                <CarouselNext className="relative left-0 top-8 h-[45px] w-[45px] border-primary bg-transparent text-primary hover:bg-primary hover:text-white 2xl:h-[60px] 2xl:w-[60px]" />
+              </div>
+            </Carousel>
           </div>
         </div>
       </section>
