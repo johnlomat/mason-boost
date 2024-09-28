@@ -19,7 +19,7 @@ import {
 export default function Home() {
   return (
     <React.Fragment>
-      <section className="flex h-auto min-h-0 w-full items-center justify-center bg-[url('/images/section-background-1.jpg')] bg-cover bg-center bg-no-repeat py-16 md:min-h-[530px] xl:h-[calc(100vh-94px)] xl:min-h-[700px] xl:py-0">
+      <section className="flex h-auto min-h-0 w-full items-center justify-center bg-[url('/_next/image?url=%2Fimages%2Fsection-background-1.jpg&w=1920&q=75')] bg-cover bg-center bg-no-repeat py-16 md:min-h-[530px] xl:h-[calc(100vh-94px)] xl:min-h-[700px] xl:py-0">
         <div className="container">
           <div className="mx-auto max-w-[720px] xl:max-w-[960px]">
             <div className="heading-1 mb-7 text-center text-white">
@@ -281,7 +281,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#939598] bg-[url('/images/section-background-2.jpg')] bg-cover bg-center bg-no-repeat py-16">
+      <section className="bg-[#939598] bg-[url('/_next/image?url=%2Fimages%2Fsection-background-2.jpg&w=1920&q=75')] bg-cover bg-center bg-no-repeat py-16">
         <div className="container md:w-[95%]">
           <div className="space-y-10">
             <div className="mx-auto max-w-[700px]">
